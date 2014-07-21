@@ -1,0 +1,1310 @@
+/*
+	Theme Name: Neighborwoods
+	Theme URI: http://aarontgrogg.com/boilerplate/
+	Description: A merger created by Aaron T. Grogg (<a href="http://aarontgrogg.com/">http://aarontgrogg.com/</a>) of the HTML5 Boilerplate (<a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a>) and the Starkers theme (<a href="http://starkerstheme.com/">http://starkerstheme.com/</a>), Boilerplate: Starkers provides developers with an ideal, bleeding-edge, clean-start theme.  Mark-up is minimal (thanks Elliott) and the most edge-case web technology is baked right in (thanks Paul, Divya and a large cast of supporting characters)!  Boilerplate themes are designed to serve as a Parent theme to whatever Child (<a href="http://codex.wordpress.org/Child_Themes">http://codex.wordpress.org/Child_Themes</a>) you care to add, but you could just as easily use this as a starting point and alter the PHP as your design needs.  More about this theme can be found at <a href="http://aarontgrogg.com/boilerplate/">http://aarontgrogg.com/boilerplate/</a>.
+	Author: Aaron T. Grogg, based on the work of Paul Irish, Divya Manian, and Elliot Jay Stocks
+	Author URI: http://aarontgrogg.com/
+	Version: 3.4.4
+	Tags: custom-menu, editor-style, theme-options, threaded-comments, sticky-post, microformats, rtl-language-support, translation-ready
+
+	License: GNU General Public License v2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+	This CSS file is a concatenation of style.css from HTML5 Boilerplate and style.css from Starkers.
+	Comment blocks indicate where each begins and ends, like this, for example...
+*/
+
+/** START HTML5 Boilerplate CSS **/
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { bcolor: #222; }
+
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fef1b4; text-shadow: none; }
+::selection { background: #fef1b4; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #F49120; }
+a:visited { color: #F49120; }
+a:hover { color: #393; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; padding: 5px 5px 5px 0;}
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* ==|== primary styles =====================================================
+   Author: sarah semark	
+   ========================================================================== */
+
+
+/* TYPOGRAPHY */
+em, i {
+	font-style: normal;
+	color: #00aeef;
+}
+strong, b, h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: "UniversLTW01-67BoldCn", Helvetica, "Arial Narrow";
+	color: #97c93c;	
+	text-transform: uppercase;	
+	clear: left;
+} 
+h1 {
+	background: #00aeef;
+ 	color: #fff;
+ 	font-size: 1.6em;
+ 	letter-spacing: .25px;
+ 	padding: 10px 15px;
+ 	float: left;
+ 	margin-top: 0px;
+ 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);	
+} 
+.entry-content {
+	clear: left;
+}
+h2 {
+ 	color: #F49120;
+	font-size: 1.4em;	
+	margin: 40px 0 0 0;
+} 
+h3, h3 a {
+	color: #97c93c;
+	text-transform: uppercase;	
+}
+
+
+
+
+/* HEADER */
+
+body {
+	font: 90% "UniversLTW01-57Condense 723821", Helvetica, "Arial Narrow";
+	/* background: #794400; */
+	background: #393;
+}
+#wrapper {
+	background: #fff;
+}
+header {
+	background: #fff;
+	padding: 20px 0 0px 0;
+	color: #050809;
+	font-size: 1.2em;
+} header em {
+	color: #393;
+	font-family: "UniversLTW01-67BoldCn", Helvetica, "Arial Narrow";	
+}
+header img {
+	float: left;
+	padding: 0;
+	margin: 0 10px 10px;
+}
+
+
+
+/* NAVIGATION */
+#skip {
+	display: none;
+}
+#menu-main-menu {
+    border: 1px solid #106006;    
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.45);
+    height: 45px;
+    margin-bottom: 10px;
+	background: #429644; /* Old browsers */
+	background: -moz-linear-gradient(top, #429644 0%, #116107 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#429644), color-stop(100%,#116107)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #429644 0%,#116107 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #429644 0%,#116107 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #429644 0%,#116107 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #429644 0%,#116107 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#429644', endColorstr='#116107',GradientType=0 ); /* IE6-9 */
+}
+#menu-main-menu  li {
+	float: left;
+	background: url('images/line.png') no-repeat right 8px;
+} 
+#menu-main-menu  a { 
+  	transition: all 100ms ease-in-out;
+  	-moz-transition: all 100ms ease-in-out;
+  	-o-transition: all 100ms ease-in-out;
+  	-webkit-transition: all 100ms ease-in-out;
+  	color: #fff;
+  	font-family: "UniversLTW01-67BoldCn", Helvetica, "Arial Narrow";
+  	font-size: 1em; 
+  	text-transform: uppercase;
+  	border: 1px solid transparent;
+  	padding: 1em 16.1px .8em;
+	display: block; 
+	text-decoration: none; letter-spacing: .025em;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	width: 122px;
+	text-align: center;
+} #menu-main-menu li:last-child {
+	background: none;
+} #menu-main-menu > li:last-child a {
+	padding-right: 16.4px;
+	float: right;
+} #menu-main-menu li a:hover { 
+    background: #00aeef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00aeef 0%, #1d2e60 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00aeef), color-stop(100%,#1d2e60)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #00aeef 0%,#1d2e60 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #00aeef 0%,#1d2e60 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #00aeef 0%,#1d2e60 100%); /* IE10+ */
+    background: linear-gradient(top,  #00aeef 0%,#1d2e60 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#1d2e60',GradientType=0 ); /* IE6-9 */
+    /*margin-top: -.15em;   */  
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.7);
+}   
+
+
+
+/* current page highlighting */    
+#menu-main-menu li.current-page-ancestor > a, #menu-main-menu li.current-menu-item > a {
+	background: #429644; /* Old browsers */
+	background: -moz-linear-gradient(top, #116107 100%, #0c4704 0%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#116107), color-stop(100%,#0c4704)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #116107 0%,#0c4704 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #116107 0%,#0c4704 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #116107 0%,#0c4704 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #116107 0%,#0c4704 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#116107', endColorstr='#0c4704',GradientType=0 ); /* IE6-9 */
+	margin-left: -2px;
+	width: 124px;
+} #menu-main-menu ul li.current-menu-item > a, 
+  #menu-main-menu ul li.current_page_item > a, 
+  #menu-main-menu ul li.current-page-parent > a {
+  	background: #f8fafb;
+  	color: #243879;
+  	margin-left: 0;
+  	width: auto;
+  	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+} #menu-main-menu ul li.current-menu-item > a:hover, 
+  #menu-main-menu ul li.current_page_item > a:hover, 
+  #menu-main-menu ul li.current-page-parent > a:hover {
+	 color: #243879;
+	 text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); 
+} #menu-main-menu ul li.parent-menu-item.current-menu-item > a {
+   
+} 
+
+
+
+/* sub menus */
+.sub-menu {
+	display: none;
+	margin: 0 0 0 0;
+	font-size: 0.9em;
+	border: 1px solid #364d99;
+	border-top: 0; 
+	background: #DFE9EF; background: rgba(223, 233, 239, 0.9);
+	position: absolute;
+	top: auto; left: auto;
+	width: 250px;
+	height: auto;
+	z-index: 99999;
+	padding: 0;
+	box-shadow: 0px 1px 2px rgba(161, 181, 208, 0.25);
+	text-align: left;
+} nav[role=navigation] li:hover > .sub-menu {
+	display: block;
+} .sub-menu li {
+  	border: 0;
+  	width: 100%;
+  	border-top: 1px solid #fff;
+  	border-bottom: 1px solid #364d99;
+} .sub-menu li:hover {
+	border-top-color: #364d99;
+} #menu-main-menu .sub-menu a {
+	color: #364d99;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+	padding: .5em 1em;
+	width: auto;
+	text-align: left;
+} #menu-main-menu .sub-menu a:hover {
+	color: #DFE9EF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/* SLIDESHOW SIDEBAR */
+.slideshow {
+	margin: 0 0 -110px 0;
+	height: 100px;
+	z-index: 1000;
+	padding: 10px 0 0 15px;
+	position: relative;
+	color: #fff;
+	font-size: 2.4em;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	line-height: 1em;
+}
+.meteor-slides p {
+    background: #fff;
+    bottom: 10px;
+    right: 0px;
+    color: #393;
+    margin: 0;
+    font-size: .95em;
+    padding: 15px;
+    position: absolute;
+    text-align: left;
+    width: 140px;
+}
+.meteor-slides .meteor-buttons {
+    bottom: 25px;
+    height: 16px;
+    left: -5px;
+    margin: 0;
+    position: absolute;
+    width: 210px;
+    z-index: 50;
+} .meteor-buttons a {
+    background: url("images/buttons.png") no-repeat scroll left bottom transparent;
+    display: block;
+    float: right;
+    height: 16px;
+    margin: 0 2px 0 0;
+    outline: medium none;
+    text-indent: -9999px;
+    width: 16px;
+} .meteor-buttons a.activeSlide {
+    background: url("images/buttons.png") no-repeat scroll -18px 0px transparent;
+} .meteor-buttons a:hover {
+    background: url("images/buttons.png") no-repeat scroll right bottom transparent;
+} div.navpaged, div.navboth {
+    margin: 0;
+}
+
+
+
+/* HOMEPAGE */
+
+/* main area */
+#text-4 h1 {
+	color: #97c93c;
+	background: none;
+	font-size: 4.5em;
+	line-height: 1em;
+	text-shadow: none;
+	padding: 0;
+	margin: 15px 0 0 0;
+} 
+#text-4 h2 {
+	color: #97c93c;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0;
+	margin: 0 0 30px 0;
+}	
+#text-4 a, .events-link {
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.45);
+	font-family: "UniversLTW01-67BoldCn", Helvetica, "Arial Narrow"; font-size: 1.6em; 
+	padding: .75em .2em;
+	display: block; 
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+	color: #fff !important;
+	text-align: center;
+	text-transform: uppercase;
+    background: #00aeef; 
+    border: 2px solid #fff;
+    letter-spacing: .5px;
+    margin: .5em 0;
+} .events-link {
+	margin-left: 20%;
+	margin-right: 20%;
+} #text-4 a:hover, .events-link:hover {
+    background: #0095cc;
+}
+
+/* announcements */
+#text-3 h1 {
+	display: none;
+} 
+#text-3 {
+	color: #794400;
+	font-family: "UniversLTW01-57Condense 723821", Helvetica, "Arial Narrow";
+	font-size: 1em;
+	padding: 10px; 
+	margin: 20px 0 0 0;
+}	
+#text-3 a {
+	color: #050809;
+}
+
+
+
+/* twitter */
+#twitter {
+	background: #fef1b4 url('images/twitter.png') no-repeat bottom right;
+	padding: 10px;
+	font-size: .85em;
+}
+#twitter h2 {
+	color: #794400;
+	text-transform: none;
+	margin: 0 0 10px 0;
+}
+.tb_header {
+	display: none;
+} 
+a.tb_photo img {
+	display: none;
+}
+
+div.tb_tweet {
+	border-top: 2px solid #fff;
+	margin: 0 0 5px 0;
+	padding: 5px 0 0 0;
+	min-height: 0;
+} .tb_tweet-info {
+	display: none;
+} div.tb_tweetlist {
+	border-bottom: 2px solid #fff;
+} #followus {
+	color: #393;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+
+
+
+
+
+/* MAIN CONTENT */
+#content {
+	clear: both;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+/* EVENT MAP PAGE */
+
+.store h4 {
+	margin: 0;
+} .date {
+	font-size: 1.05em;
+	color: #794400;
+}
+	
+
+/* store locator panel */
+.location-search h3 {
+	margin: 0px;
+}
+.location-search input {
+	width: 205px;
+} 
+.no-events {
+	margin: 10px;
+}
+
+.store-list {
+	list-style-type: none;
+	margin: 10px 0; padding: 0;
+	font-size: .95em;
+} .storelocator-panel div.store {
+	border-top: 1px solid #b18e5f;
+	margin: 0; padding: 5px;
+} .storelocator-panel div.store:hover {
+	cursor: pointer;
+} .storelocator-panel .venue, .storelocator-panel .streetAddress, .storelocator-panel .zip, .storelocator-panel .web, .features {
+	display: none;	
+} li.highlighted {
+	background: #fef1b4;
+} 
+
+
+
+/* map itself */
+#map-canvas {
+	margin-top: 20px;
+}
+#map-canvas .date {
+	margin: 5px 0;
+} #map-canvas .address {
+	font-size: .9em;
+} .web {
+	margin: 10px 0;
+} .action {
+	padding-right: 10px;
+	font-size: .9em;
+}
+#map-canvas .store {
+	padding-bottom: 10px;
+}
+
+
+
+/* SINGLE EVENT PAGE */
+
+.event-label-name, .event-meta-name, .event-label-updated, .event-meta-updated {
+	display: none;
+}
+#tribe-events-event-meta {
+	border-top: 1px solid #fef1b4;
+	border-bottom: 2px solid #fef1b4;
+	font-size: .9em;	
+	padding: 10px 0 0 0;
+} 
+#tribe-events-event-meta dt {
+	font-family: "UniversLTW01-67BoldCn", Helvetica, "Arial Narrow";
+	color: #393;	
+	text-transform: uppercase;	
+	font-weight: normal;
+	text-align: left;
+} #tribe-events-event-meta dd {
+	margin-left: 90px;
+}
+#tribe-events-event-meta strong {
+	float: left;
+	width: 85px;
+}
+#tribe-events-event-meta ul {
+	float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px
+} #tribe-events-event-meta ul li {
+	margin: 0 0 5px 0;
+}
+.event-passed {
+    background-color: rgb(223, 233, 239);
+    background-color: rgba(223, 233, 239, 0.8);
+    border-color: #00aeef;
+    border-radius: 0;
+    border-left: 0; border-right: 0;
+    clear: left;
+    color: #00aeef;
+    margin: 10px 0 18px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+a.ical, a.gcal-add, a.gmap {
+    background: #393;
+    float: right;
+    color: #fff;
+    border-radius:0;
+    font-size: 11px;
+    letter-spacing: .2px;
+    line-height: 18px;
+    margin: 2px ;
+    padding: 2px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.venue-events .tribe-events-event {
+	border-bottom: 0;
+	border-top: 1px solid 
+}
+
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dt {
+	font-weight: normal;
+	width: 15%;
+	float: left;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+}
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dd {
+	width: 80%;
+	float: left;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+}
+
+/* single event page meta boxes + map */
+.single-tribe_events .tribe-events-event-meta {
+	border: 0;
+	background: none;
+	font-size: 1em;
+	border-top: 2px solid #00aeef;
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+.tribe-events-event-meta .tribe-events-meta-group, .tribe-events-event-meta .column {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+.tribe-events-meta-group:nth-of-type(3) {
+	display: none;
+}
+.tribe-events-meta-group .tribe-events-single-section-title {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.single-tribe_events .tribe-events-venue-map {
+	width: 50%;
+	float: left;
+    margin: 10px 0;
+    padding: 0;
+    float: none;
+    border: none;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+
+
+/* overall map page */
+.events-archive .entry-content, .events-archive .entry-header {
+	width: 100%;
+}
+
+
+#tribe-geo-map-wrapper {
+	background: none;
+	border: none;
+	padding: 0;
+	border-radius: 0;
+}
+
+#tribe-events-content.tribe-events-list {
+	padding: 0 !important;
+	margin-top: -50px;
+}
+
+.tribe-events-list .vevent.hentry {
+    padding: 0;
+    width: 31%;
+    float: left;
+    margin: 0 3.5% 1% 0;
+	border-bottom: 2px solid #00aeef;
+	height: 140px;
+}
+.tribe-events-list .vevent.hentry:nth-of-type(3n) {
+	margin-right: 0;
+}
+h3.tribe-events-map-event-title, h3.tribe-events-map-event-title a {
+	text-transform: none;
+	margin-bottom: .25em;
+}
+.tribe-events-loop .tribe-events-event-meta .time-details {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.tribe-events-list .tribe-events-venue-details, .tribe-events-event-meta address.tribe-events-address {
+	font-style: normal;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUBMIT AN EVENT FORM */
+#tribe-community-events, #tribe-events-calendar-header, .tribe-events-calendar, #tribe-events-content .ical, .events-single #content .ical, a.gmap, .tribe-events-event-list-meta td, .tribe-events-nav, #tribe-events-event-meta, span.back, .eventsListWidget .dig-in, .eventsAdvancedListWidget .dig-in, .gcal-add, #tribe-community-events input, #tribe-community-events textarea,  .location-search input  {
+	font-family: "UniversLTW01-57Condense 723821", Helvetica, "Arial Narrow";
+}
+
+#tribe-community-events h4 {
+	font-weight: normal;
+}
+
+#event_cost {
+	display: none;
+}
+
+.bubble {
+    background: none;
+    border: 0;
+    padding: 0px;
+} 
+#EventInfo, .eventtable {
+    margin: 0px;
+}
+#eventDetails h4, #EventBriteDetailDiv h4 {
+    border-bottom: 2px solid #393;
+    padding-bottom: 5px;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: left;
+
+}
+.eventForm .tribe_sectionheader {
+    padding: 0 0 10px 0 !important;
+    margin: 0 !important;
+}
+.eventForm td {
+    font-size: 13px;
+    padding: 0 6px 10px 0;
+    vertical-align: middle;
+}
+input[type="text"], input[type="textarea"], select, .chzn-container-single .chzn-single, .location-search input {
+	font-size: 13px;
+	border: 1px solid #8f8f8f;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.19); /* drop shadow */
+	background-image: -moz-linear-gradient(90deg, rgba(244,244,244,.55) 0%, rgba(255,255,255,.55) 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(90deg, rgba(244,244,244,.55) 0%, rgba(255,255,255,.55) 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(90deg, rgba(244,244,244,.55) 0%, rgba(255,255,255,.55) 100%); /* gradient overlay */
+	background-image: linear-gradient(90deg, rgba(244,244,244,.55) 0%, rgba(255,255,255,.55) 100%); /* gradient overlay */
+} 
+input[type="text"], input[type="textarea"], select,  .location-search input  {
+	padding: 7px 8px;
+}
+.chzn-container {
+	vertical-align: middle;
+}
+.chzn-container-single .chzn-single {
+    border-radius: 0;
+    padding: 2px 10px;
+} 
+.chzn-container-single .chzn-single div {
+    border-left: 1px solid #8f8f8f;
+    border-radius: 0;
+}
+.chzn-container-single .chzn-single div b {
+    /*background: url("images/chosen-sprite.png") no-repeat scroll 0 1px transparent;*/
+}
+.chzn-container-single .chzn-drop {
+    border-radius: 0 0;
+} 
+.chzn-container .chzn-drop {
+    border: 1px solid #8f8f8f;
+    border-width: 0 1px 1px;
+} 
+.chzn-container-active .chzn-single-with-drop {
+    background-color: #fff;
+	background-image: -moz-linear-gradient(90deg, rgba(255,255,255,.55) 0%, rgba(244,244,244,.55) 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(90deg, rgba(255,255,255,.55) 0%, rgba(244,244,244,.55) 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(90deg, rgba(255,255,255,.55) 0%, rgba(244,244,244,.55) 100%); /* gradient overlay */
+	background-image: linear-gradient(90deg, rgba(255,255,255,.55) 0%, rgba(244,244,244,.55) 100%); /* gradient overlay */
+    border: 1px solid #8f8f8f;
+} 
+.chzn-container-single .chzn-single span {
+	margin-right: 5px;
+}
+
+
+input[type="text"] {
+	width: 280px;
+}
+input:focus {
+	background: #fff;
+	box-shadow: 0px 0px 3px rgba(105,61,32,.5); /* drop shadow */
+}
+#EventStartDate, #EventEndDate {	
+	width: 60px;
+}
+#EventZip {
+	width: 100px;
+}
+#eventDetails tr td:first-child, label[for="post_title"] {
+	padding-right: 20px;
+    text-align: left;
+    width: 160px;
+} 
+label[for="post_title"] {
+	float: left;
+	width: 100px;
+	padding-top: 7px;	
+}
+
+#tribe-community-events small.req {
+	font-style: normal;
+	display: none;
+}
+
+.tribe-community-event-info {
+	margin: 50px 0 0;
+}
+.eventForm h4 {
+	font-size: 18px;
+	margin: 20px 0 5px 0;
+}
+
+#tribe-community-events .events-community-post-title input {
+	clear: none;
+	width: 360px;
+}
+.eventForm p.nosaved {
+	padding: 10px 6px 10px 0px;
+	margin: 0 !important;
+}
+#tribe-community-events .events-community-footer {
+    border-top: 2px solid #794400;
+    margin-top: 30px;
+}
+
+
+.single-tribe_events h1.entry-title, .events-list h1.entry-title {
+	display: none;
+}
+
+
+/* buttons */
+#tribe-community-events input[type="submit"], #tribe-community-events .button, .tribe-events-back {
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.45);
+    padding: 10px 20px 10px;
+	font-family: "UniversLTW01-67BoldCn", Helvetica, "Arial Narrow"; font-size: 1.6em; 
+	display: inline-block; 
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+	color: #fff !important;
+	text-align: center;
+	text-transform: uppercase;
+    background: #00aeef; 
+    border: 2px solid #fff;
+    letter-spacing: .5px;
+    margin: .5em auto;
+    text-align: center;
+    border-radius: 0;
+    font-weight: normal;
+}
+.tribe-events-back {
+	padding: 5px 20px 10px;
+}
+.tribe-events-back a {
+	color: #fff;
+}
+#tribe-community-events .button {
+	font-size: 1em;
+	background: #97c93c;
+}
+#tribe-community-events input[type="submit"]:hover, #tribe-community-events .button:hover, .tribe-events-back:hover {
+    background: #0095cc;
+}
+
+
+} #tribe-community-events input[type="submit"] {
+	margin: 10px auto;
+}
+
+
+.single-tribe_events .tribe-events-schedule h3 {
+	display: block;
+	margin: 0;
+}
+
+
+
+
+/* MY EVENTS PAGE */
+#tribe-community-events div.updated p:after {
+    content: "Thanks for registering your local event for National NeighborWoods™ Month. Your event will post to the National Map within one day.";
+    display: block;
+    margin-top: 10px;
+} 
+#add-new, #my-events {
+	margin-bottom: 0;
+}
+#not-user {
+    border-bottom: 2px solid #794400;
+    float: right;
+    margin-top: -15px;
+    padding-bottom: 10px;
+    text-align: right;
+    width: 100%;
+}
+#tribe-community-events div.updated, div.error {
+    border-style: solid;
+    font-family: "UniversLTW01-57Condense 723821", Helvetica, "Arial Narrow";
+    font-size: 1em;
+}
+#tribe-community-events div.updated, div.error {
+    border-radius: 0;
+    border-left: 0; border-right: 0;
+    border-width: 1px;
+    margin: 5px 0 10px;
+    padding: 0.75em 1em;
+}
+#tribe-community-events div.updated, .login .message {
+    background-color: #FEF1B4;
+    border-color: #B18E5F;
+}
+.my-events-table-wrapper table {
+	width: 100%;
+}
+.my-events-table-wrapper th {
+	color: #393;
+	text-align: left;
+	text-transform: uppercase;
+}
+.my-events-table-wrapper td {
+	vertical-align: middle;
+}
+
+
+
+
+
+
+/* EXTRA FORMATTING FOR SPONSOR PAGES */
+.page-id-99 .entry-content div {
+	padding: 20px 0;
+	text-align: center;
+} .little-sponsor {
+	padding: 40px 30px 20px;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+#footer {
+	background: #DFE9EF;
+	border: 1px solid #A0AFDE;
+	font-size: .9em;
+	padding: 10px 0;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	clear: both;
+} 
+#footer div.alpha {
+    margin-left: 10px;
+    margin-right: 0;
+    width: 380px;
+}
+
+.sponsors img {
+	padding: 0 8px 0 0;
+	float: left;
+} .sponsors div {
+	display: block;
+	float: left;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 0 3px;
+	letter-spacing: .5px;
+} .sponsors h4 {
+	font-size: 1.2em;
+	text-align: center;
+	margin: 0 auto;
+	width: 240px;
+}
+	
+
+
+#actrees_logo {
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* social media sharing buttons */
+#twitter-button, #facebook-button, #youtube-button, #flickr-button {
+  height: 23px;
+  width: 23px;
+  float: left;
+  margin: 10px 10px 5px 0;
+  background: url('images/social.png');
+  text-indent: -10000px;
+  border: 1px solid #A0AFDE;
+} #twitter-button:hover, #facebook-button:hover, #youtube-button:hover, #flickr-button:hover {
+  border-color: #fff;
+} #twitter-button {
+	background-position: 97px -2px;
+} #facebook-button {
+	background-position: 130px -2px;
+} #youtube-button {
+	background-position: 64px -2px;
+} #flickr-button {
+	background-position: 31px -2px;
+}
+
+
+#address {
+	clear: left;
+	padding-top: 5px;
+}
+
+.copyright {
+	text-align: center;
+	margin: 5px 0 10px;
+	font-size: .9em;
+}
+
+
+
+
+
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
+/** END HTML5 Boilerplate CSS **/
+
+
+/** START Starkers CSS **/
+
+/* LAYOUT */
+/* ----------------------------------------- */
+
+/* These rather presentational classes are generated by WordPress, so it's useful to have some styles for them. Edit as you see fit. More info: http://codex.wordpress.org/CSS */
+.aligncenter { display:block; margin:0 auto }
+.alignleft { float:left }
+.alignright { float:right }
+.wp-caption { border:1px solid #666; text-align:center; background:#ccc; padding:10px; margin:10px }
+
+/* You might find the following useful */
+/* div, ul, li { position:relative } This will save you having to declare each div / ul / li's position as 'relative' and allows you to absolutely position elements inside them
+br.clear { clear:both; display:block; height:1px; margin:-1px 0 0 0 } /* Use this br class to clear your floated columns */
+li#theme-switcher { background:#fff; border:10px solid red; padding:20px; position:fixed; top:0; right:0 } /* Use this if you have the Theme Switcher Reloaded plugin (http://themebot.com/webmaster-tools/1-wordpress-theme-switcher-reloaded) installed and want to make it nice and obvious */
+*/
+/* TYPOGRAPHY */
+/* ----------------------------------------- */
+
+
+.alert { background:red; color:white } /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.
+
+
+
+/* Font stack options
+
+	The following represents a list of font stacks, as recommended by Nathan Ford in
+	http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
+
+	I've added inverted commas around the relevant family names to ensure compatibility.
+	p = balanced for paragraphs or body copy
+	t = balanced for headlines or titles
+
+	- - - -
+
+Arial, "Helvetica Neue", Helvetica, sans-serif - p, t
+
+Baskerville, "Times New Roman", Times, serif - p
+Baskerville, "Times, Times New Roman", serif - t
+
+Cambria, Georgia, Times, "Times New Roman", serif - p, t
+"Century Gothic", "Apple Gothic", sans-serif - p, t
+
+Consolas, "Lucida Console", Monaco, monospace - p, t
+
+"Copperplate Light", "Copperplate Gothic Light", serif - p, t
+
+"Courier New", Courier, monospace - p, t
+
+"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif - p, t
+
+Futura, "Century Gothic", "Apple Gothic", sans-serif - p, t
+
+Garamond, "Hoefler Text", "Times New Roman", Times, serif - p
+Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif - t
+
+Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif - p
+Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - t
+
+Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif - p
+Georgia, Times, "Times New Roman", serif - t
+
+GillSans, Calibri, Trebuchet, sans-serif - p
+GillSans, Trebuchet, Calibri, sans-serif - t
+
+"Helvetica Neue", Arial, Helvetica, sans-serif - p
+Helvetica, "Helvetica Neue", Arial, sans-serif - t
+
+Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif - p, t
+
+"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - p, t
+
+Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif - p
+Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif - t
+
+Tahoma, Geneva, Verdana - p
+Tahoma, Verdana, Geneva - t
+
+Times, "Times New Roman", Georgia, serif - p, t
+
+Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif - p
+Trebuchet, Tahoma, Arial, sans-serif - t
+
+Verdana, Geneva, Tahoma, sans-serif - p
+Verdana, Tahoma, Geneva, sans-serif - t
+
+*/
+
+/** END Starkers CSS **/
+
+/** START WordPress-Defined CSS Classes **/
+.wp-caption-text{}
+.gallery-caption{}
+.bypostauthor{}
+.sticky{}
+/** END WordPress-Defined CSS Classes **/
