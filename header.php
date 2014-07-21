@@ -57,7 +57,7 @@
 		<header role="banner">
 		
 		<div class="grid_4">
-			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src=" <?php bloginfo('template_directory'); ?>/images/neighborwoods-month.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>			
+			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src=" <?php bloginfo('template_directory'); ?>/images/neighborwoods-10year.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>			
 		</div>
 		
 		<div class="grid_7">
