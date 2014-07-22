@@ -490,8 +490,8 @@ header img {
 
 /* main area */
 #text-4 h1 {
-	background-color: #97c93c;
-	color: white;
+	color: #794400;
+	background: none;
 	font-size: 4.5em;
 	line-height: 1em;
 	text-shadow: none;
