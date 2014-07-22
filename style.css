@@ -1086,23 +1086,27 @@ label[for="post_title"] {
     margin-right: 0;
     width: 380px;
 }
-
 .sponsors img {
 	padding: 0 8px 0 0;
-	float: left;
-} .sponsors div {
-	display: block;
-	float: left;
+	display: inline-block;
+}
+.main-sponsor {float: left;}
+.national-sponsors {margin-left: 10px;}
+.sponsors div {
+	display: inline-block;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 0 0 3px;
 	letter-spacing: .5px;
-} .sponsors h4 {
+    width: calc(100%-92px);
+} 
+.sponsors h4 {
 	font-size: 1.2em;
 	text-align: center;
 	margin: 0 auto;
 	width: 240px;
 }
+.sponsors h4:nth-of-type(2n) {font-size: 1em;}
 	
 
 
