@@ -783,16 +783,18 @@ a.ical, a.gcal-add, a.gmap {
 
 #tribe-events-content.tribe-events-list {
 	padding: 0 !important;
-	margin-top: -50px;
+	margin-top: 20px;
 }
+
+.tribe-events-list-separator-month {clear: both;}
 
 .tribe-events-list .vevent.hentry {
     padding: 0;
-    width: 31%;
+    width: 29%;
     float: left;
-    margin: 0 3.5% 1% 0;
+    margin: 0px 2.25% 2em 2.25%;
 	border-bottom: 2px solid #00aeef;
-	height: 140px;
+	min-height: 140px;
 }
 .tribe-events-list .vevent.hentry:nth-of-type(3n) {
 	margin-right: 0;
