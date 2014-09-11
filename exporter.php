@@ -15,7 +15,7 @@ echo '</ul>';
 
 // set up array
 $events = array();
-$events[0] = array('Event title','Date posted','Organization','Contact Name','Venue Name','Address','City','State','Zip','Country','Phone','Email','Website','Event Date','Time Start','Time End','Shipping Address','# of Volunteers','# of Trees to be Planted','# of Trees to be Cared For','# of Square Feet of Invasives to be Removed','Project Description','Event link');
+$events[0] = array('Event title','Date posted','Organization','Contact Name','Venue Name','Address','City','State','Zip','Country','Phone','Email','Website','Event Date','Time Start','Time End','Shipping Contact Name', 'Shipping Address', 'Shipping City', 'Shipping State', 'Shipping Zip', '# of Volunteers','# of Trees to be Planted','# of Trees to be Cared For','# of Square Feet of Invasives to be Removed','Project Description','Event link');
 
 $count = 1;
 
@@ -104,7 +104,12 @@ foreach($all_events as $post) {
 	$shipping_address .=  tribe_get_custom_field('Shipping Zip');
 	//echo $shipping_address;
 	//echo "</strong>";
-	$events[$count][] = $shipping_address;
+	$events[$count][] = tribe_get_custom_field('Shipping Contact Name') . "\r\n";
+	$events[$count][] = tribe_get_custom_field('Shipping Address (cannot be P.O. Box)') . "\r\n";
+	$events[$count][] =  tribe_get_custom_field('Shipping City'). ", ";
+	$events[$count][] =  tribe_get_custom_field('Shipping State') ." ";
+	$events[$count][] =  tribe_get_custom_field('Shipping Zip');
+	//$events[$count][] = $shipping_address;
 	
 	//echo "<br>Number of Volunteers: ";
 	//echo tribe_get_custom_field('Number of Volunteers');
