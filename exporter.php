@@ -85,7 +85,7 @@ foreach($all_events as $post) {
 	
 	echo " (Event Date: ";
 	echo tribe_get_start_date( $post->ID, true, 'D. M j' ) . ')';
-	$events[$count][] = tribe_get_start_date( $post->ID, true, 'D. M j' );
+	$events[$count][] = tribe_get_start_date( $post->ID, true, 'y-m-d' );
 		
 	//echo "<br>Time Start: ";
 	//echo tribe_get_start_date( $post->ID, true, '' );

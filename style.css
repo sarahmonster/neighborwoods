@@ -1010,8 +1010,8 @@ label[for="post_title"] {
 
 
 /* MY EVENTS PAGE */
-#tribe-community-events div.updated p:after {
-    content: "Thanks for registering your local event for National NeighborWoods™ Month. Your event will post to the National Map within one day.";
+#tribe-community-events div.updated:before {
+    content: "Thanks for registering your local event for National NeighborWoods® Month! Your event will be posted to the National Map shortly. Please utilize the online resources available to make the most of your celebration. If you have any questions, please contact Programs@ACTrees.org or call 202-291-8733.";
     display: block;
     margin-top: 10px;
 } 
