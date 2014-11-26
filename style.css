@@ -1,3 +1,5 @@
+@import url("socicon/socicon.css");
+
 /*
 	Theme Name: Neighborwoods
 	Theme URI: http://aarontgrogg.com/boilerplate/
@@ -580,7 +582,6 @@ div.tb_tweet {
 
 
 
-
 /* MAIN CONTENT */
 #content {
 	clear: both;
@@ -1117,26 +1118,51 @@ label[for="post_title"] {
 	padding-top: 10px;
 }
 
-/* social media sharing buttons */
-#twitter-button, #facebook-button, #youtube-button, #flickr-button {
-  height: 23px;
-  width: 23px;
-  float: left;
-  margin: 10px 10px 5px 0;
-  background: url('images/social.png');
-  text-indent: -10000px;
-  border: 1px solid #A0AFDE;
-} #twitter-button:hover, #facebook-button:hover, #youtube-button:hover, #flickr-button:hover {
-  border-color: #fff;
-} #twitter-button {
-	background-position: 97px -2px;
-} #facebook-button {
-	background-position: 130px -2px;
-} #youtube-button {
-	background-position: 64px -2px;
-} #flickr-button {
-	background-position: 31px -2px;
+/* social media links */
+.socicon {
+  position: relative;
+  margin: 5px 2px;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 50%;
+  padding: 8px;
+  text-decoration: none;
 }
+.socicon:hover { color: #fff !important; }
+.socicon span { display: none; }
+
+.socicon.twitter:before { content: "a"; }
+.socicon.twitter { color: #4da7de; border-color: #4da7de; }
+.socicon.twitter:hover { background: #4da7de; }
+
+.socicon.facebook:before { content: "b"; }
+.socicon.facebook { color: #3e5b98; border-color: #3e5b98; }
+.socicon.facebook:hover { background: #3e5b98; }
+
+.socicon.flickr:before { content: "v"; }
+.socicon.flickr { color: #3e5b98; border-color: #3e5b98; }
+.socicon.flickr:hover { background: #3e5b98; }
+
+.socicon.youtube:before { content: "r"; }
+.socicon.youtube { color: #e02a20; border-color: #e02a20; }
+.socicon.youtube:hover { background: #e02a20; }
+
+.socicon.instagram:before { content: "x"; }
+.socicon.instagram { color: #9c7c6e; border-color: #9c7c6e; }
+.socicon.instagram:hover { background: #9c7c6e; }
+
+.socicon.rss:before { content: ","; }
+.socicon.rss { color: #f26109; border-color: #f26109; }
+.socicon.rss:hover { background: #f26109; }
 
 
 #address {
