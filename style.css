@@ -1149,8 +1149,8 @@ label[for="post_title"] {
 .socicon.facebook:hover { background: #3e5b98; }
 
 .socicon.flickr:before { content: "v"; }
-.socicon.flickr { color: #3e5b98; border-color: #3e5b98; }
-.socicon.flickr:hover { background: #3e5b98; }
+.socicon.flickr { color: #1e1e1b; border-color: #1e1e1b; }
+.socicon.flickr:hover { background: #1e1e1b; }
 
 .socicon.youtube:before { content: "r"; }
 .socicon.youtube { color: #e02a20; border-color: #e02a20; }
